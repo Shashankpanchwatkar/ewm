@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Environmental Conservation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #388e3c;
+      text-align: center;
+    }
+    p {
+      color: #546e7a;
+      line-height: 1.6;
+    }
+    #info-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #info-button:hover {
+      background-color: #2e7d32;
+    }
+    #info {
+      display: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>About Us - Environmental Conservation</h1>
+  <button id="info-button">Show Information</button>
+  <div id="info">
+    <p>Welcome to our environmentally conscious organization committed to preserving and protecting our planet.</p>
+    <p>We focus on sustainable practices and green initiatives to make a positive impact on the environment.</p>
+    <img src="environment.jpg" alt="Environmental Conservation" />
+    <p>Contact us at:shashankpanchwatkar12345@gmail.com</p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('info-button').addEventListener('click', function() {
+    var infoDiv = document.getElementById('info');
+    if (infoDiv.style.display === 'none') {
+      infoDiv.style.display = 'block';
+      this.textContent = 'Hide Information';
+    } else {
+      infoDiv.style.display = 'none';
+      this.textContent = 'Show Information';
+    }
+  });
+</script>
+
+</body>
+</html>
