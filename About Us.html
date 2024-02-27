@@ -6,19 +6,20 @@
 <title>About Us</title>
 <style>
   body {
-
-    background: palegoldenrod;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
- background-color: azure;
+    background-color: azure;
+    background-image: url(environment.jpg.jpg); /* Updated background image */
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Added some transparency to container */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -43,9 +44,14 @@
     text-align: center;
     margin-bottom: 20px;
   }
+  marquee{
+
+background-color:rgb(9, 143, 87);
+
+  }
 </style>
 </head>
-<body background="pexels-ivan-bertolazzi-2681319.jpg">
+<body>
 <div class="container">
   <h1>About Us</h1>
   <div class="images">
@@ -56,19 +62,21 @@
     <img src="image5.jpg" alt="Team Member 5">
   </div>
   <div class="team-member">
-    <p>yash pathade - Project Coordinator.</p>
+   <marquee behavior="slide" direction=""><p>yash pathade - Project Coordinator.</p></marquee> 
   </div>
   <div class="team-member">
-    <p>ayush patni-project Coordinator</p>
+    <marquee behavior="alternate" direction=""><p>ayush patani-helper</p></marquee>
+    
   </div>
   <div class="team-member">
-    <p>rehan Naikwadi - Web Developer Assistant</p>
+    <marquee behavior="scroll" direction=""><p>rehan Naikwadi - Web Developer Assistant</p></marquee>
+    
+  </div>
+  <div class="team-member" >
+   <marquee behavior="slide" direction=""><p>prashant panchal - Design Lead</p></marquee> 
   </div>
   <div class="team-member">
-    <p>prashant panchal - Design Lead</p>
-  </div>
-  <div class="team-member">
-    <p>shashank panchwatkar- Developer</p>
+   <marquee behavior="alternate" direction=""><p>shashank panchwatkar- Developer</p></marquee> 
   </div>
   
 </div>
