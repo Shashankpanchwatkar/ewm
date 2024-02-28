@@ -32,6 +32,12 @@
     color: #fff;
     text-align: center;
     padding: 30px 0;
+    transition: padding 0.3s, background-color 0.3s;
+  }
+
+  header.shrink {
+    padding: 15px 0;
+    background-color: #333;
   }
 
   header h1 {
@@ -103,6 +109,19 @@
     margin-bottom: 20px;
   }
 
+  /* Image Slot Styles */
+  .image-slot {
+    float: right;
+    width: 25%; /* Adjust the width as needed */
+    margin-left: 20px; /* Adjust the spacing between text and image */
+  }
+
+  .image-slot img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+  }
+
   /* Sidebar styles */
   .sidebar {
     float: right;
@@ -118,18 +137,6 @@
     font-size: 20px;
     margin-bottom: 20px;
     color: #333;
-  }
-
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .sidebar ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #555;
   }
 
   /* Footer styles */
@@ -181,12 +188,25 @@
       <li>Community Recycling Program</li>
     </ul>
   </div>
+  <div class="image-slot">
+    <!-- Your image for the slot goes here -->
+    <img src="reduce.jpg" alt="Image Slot">
+  </div>
 </div>
 
 <div class="container">
   <div class="main-content">
     <h2>Our Mission</h2>
     <p>Our mission is to protect and preserve the environment through various conservation efforts, education, and advocacy. We strive to raise awareness about the importance of environmental conservation and inspire individuals and communities to take action to protect our planet.</p>
+  </div>
+  <div class="image-slot">
+    <!-- Your image for Our Mission goes here -->
+    <img src="our mission.png" alt="Our Mission Image">
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-content">
     <h2>Conservation Initiatives</h2>
     <p>We are involved in a wide range of conservation initiatives, including:</p>
     <ul>
@@ -196,6 +216,15 @@
       <li>Supporting community-based conservation projects</li>
       <li>Engaging in habitat restoration and reforestation efforts</li>
     </ul>
+  </div>
+  <div class="image-slot">
+    <!-- Your image for Conservation Initiatives goes here -->
+    <img src="conservation initiatives.jpg" alt="Conservation Initiatives Image">
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-content">
     <h2>Tips for Sustainable Living</h2>
     <p>Here are some simple tips to help reduce your environmental impact and live more sustainably:</p>
     <ul>
@@ -208,11 +237,22 @@
       <li>Get involved in environmental advocacy and volunteer work</li>
     </ul>
   </div>
+  <div class="image-slot">
+    <!-- Your image for Tips for Sustainable Living goes here -->
+    <img src="12-sustainable-living-ideas-you-can-implement-toda.webp" alt="Tips for Sustainable Living Image">
+  </div>
 </div>
 
 <footer>
   <p>&copy; 2024 Environmental Conservation Organization. All rights reserved.</p>
 </footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    header.classList.toggle('shrink', window.scrollY > 0);
+  });
+</script>
 
 </body>
 </html>
